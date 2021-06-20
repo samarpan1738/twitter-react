@@ -1,0 +1,51 @@
+.LandingPage {
+    display: flex;
+    height: 100%;
+}
+.LandingPage > .left,
+.LandingPage > .right {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.LandingPage > .left {
+    align-items: flex-end;
+    background-color: #5c8ddb;
+    color: white;
+    margin: 15px;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    /* padding-right: 100px; */
+}
+.LandingPage > .left > .container h1 {
+    width: 11ch;
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 40px;
+}
+.features-list {
+    font-size: 20px;
+    padding-left: 20px;
+}
+.feature {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.feature + .feature {
+    margin-top: 20px;
+}
+.feature-icon {
+    width: 30px;
+    margin-right: 10px;
+}
+.features-list p {
+    /* line-height: 16px; */
+    margin: 0;
+}
+.LandingPage > .right {
+    align-items: center;
+}

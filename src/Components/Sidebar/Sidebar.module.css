@@ -1,0 +1,73 @@
+.Sidebar
+{
+    flex-basis: 280px;
+    /* background-color: lightgreen; */
+    padding-left: 16px;
+    background-color: black;
+    color:white;
+    fill:white;
+
+}
+.Sidebar > h1
+{
+    padding-left: 18px;
+    margin-bottom: 36px;
+    letter-spacing: 1px;
+}
+.navOptionsList
+{
+    padding: 0;
+    padding-left: 16px;
+}
+
+.navOption
+{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    cursor: pointer;
+    /* color:white; */
+}
+
+/* .navOption:where(:not(:last-child)) */
+.navOption
+{
+    margin-bottom: 30px;
+}
+
+.navOption:hover,.navOption:hover svg
+{
+    /* color: var(--accent-color); */
+    /* fill: var(--accent-color); */
+    color: var(--accent-color-2);
+    fill: var(--accent-color-2);
+}
+
+.navIcon
+{
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.navLabel
+{
+    font-weight: 700;
+    font-size: 20px;
+}
+.tweetBtn
+{
+    all:unset;
+    background-color: var(--accent-color-2);
+    color: white;
+    border-radius: 100px;
+    width: 80%;
+    text-align: center;
+    padding: 12px 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.tweetBtn:hover
+{
+    background-color: var(--accent-color);
+}

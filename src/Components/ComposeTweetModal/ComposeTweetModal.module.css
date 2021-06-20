@@ -1,0 +1,31 @@
+.ComposeTweetModal
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.uploadArea
+{
+    border: 2px dashed white;
+    height: 100px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+}
+.uploadAreaLabel
+{
+    font-size: 14px;
+    color: black;
+    background-color: rgb(233, 228, 228);
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+.fileInput
+{
+    display: none;
+}

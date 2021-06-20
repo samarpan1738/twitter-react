@@ -1,0 +1,108 @@
+.authForm h1 {
+    margin: 0;
+}
+.authForm header {
+    padding-left: 10px;
+}
+.authForm header p {
+    margin: 0;
+    margin-top: 6px;
+    color: #808080;
+    font-size: 14px;
+}
+
+.authForm header span
+{
+    cursor: pointer;    
+    color: #4091d8;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.inputFieldsList {
+    padding: 0;
+    margin: 30px 0;
+    margin-top: 30px;
+}
+
+.inputField {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.inputField label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: rgb(142, 142, 142);
+    padding-left: 10px;
+    font-size: 14px;
+    /* letter-spacing: 1px; */
+}
+
+.inputField input {
+    width: 100%;
+    padding: 12px 12px;
+    font-size: 16px;
+    border: none;
+    border: 1px solid rgb(219,219,219);
+    border-radius: 10px;
+    background-color: rgb(250, 246, 246);
+}
+
+.submitBtn,
+.googleAuthBtn {
+    background-color: #3ea2f9;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 100%;
+    /* margin-top: 10px; */
+    cursor: pointer;
+    height: 48px;
+}
+
+.authForm .seperator {
+    margin: 16px 0 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.authForm .seperator p{
+    margin: 0 12px;
+    text-transform: uppercase;
+    color: grey;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.authForm .lineSeperator
+{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(160, 160, 160);
+    flex: 1;
+}
+.googleAuthBtn {
+    margin-top: 0;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.googleAuthBtn img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+.googleAuthBtn:hover {
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}

@@ -1,0 +1,8 @@
+.HeroSection
+{
+    display: flex;
+    height: 100%;
+    flex: 1;
+    background-color: black;
+    color:white;
+}
