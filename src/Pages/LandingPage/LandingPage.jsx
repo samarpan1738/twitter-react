@@ -4,7 +4,7 @@ import postIcon from "../../assets/post.svg";
 import commentIcon from "../../assets/comment.svg";
 import likeIcon from "../../assets/like.svg";
 import addFriendIcon from "../../assets/addFriend.svg";
-import AuthForm from "../../Components/AuthForm/AuthForm";
+import AuthForm from "../../components/AuthForm/AuthForm";
 
 function LandingPage() {
     const [toggleOption, setToggleOption] = useState(true);

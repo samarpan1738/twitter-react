@@ -1,0 +1,29 @@
+.navOption
+{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.navOption:hover,.navOption:hover svg
+{
+    background-color: rgba(100,100,100,0.5);
+}
+
+.navIcon
+{
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.navLabel
+{
+    font-weight: 700;
+    font-size: 20px;
+}

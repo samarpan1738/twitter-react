@@ -20,8 +20,8 @@ code {
     height: 100%;
 }
 :root {
-    --accent-color: rgb(29, 161, 242);
-    --accent-color-2: hsl(158, 72, 42);
+    --accent-color: rgb(115, 38, 240);
+    --accent-color-2: rgb(100, 39, 197);
     --accent-color-2-50: hsla(158, 72, 42, 0.95);
     --accent-color-2-100: hsla(158, 72, 42, 0.9);
     --accent-color-2-200: hsla(158, 72, 42, 0.8);

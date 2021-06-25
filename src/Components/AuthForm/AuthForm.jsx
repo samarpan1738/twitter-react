@@ -87,7 +87,7 @@ function AuthForm({ setToggleOption, type }) {
                 <div className={classes.lineSeperator}></div>
             </div>
             <button className={classes.googleAuthBtn}>
-                Signup with Google <img src={googleIcon}></img>
+                Signup with Google <img src={googleIcon} alt="Google Icon"></img>
             </button>
         </form>
     );

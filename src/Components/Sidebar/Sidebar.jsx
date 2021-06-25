@@ -6,50 +6,46 @@ import { ReactComponent as ExploreNavIcon } from "../../assets/nav-icons/explore
 import { ReactComponent as NotificationNavIcon } from "../../assets/nav-icons/notification.svg";
 import { ReactComponent as MessageNavIcon } from "../../assets/nav-icons/message.svg";
 import { ReactComponent as BookmarkNavIcon } from "../../assets/nav-icons/bookmark.svg";
-
+import useWindowSize from "../../hooks/useWindowSize";
+import NavOption from "../NavOption/NavOption";
+const navOptions = [
+    {
+        label: "Home",
+        icon: HomeNavIcon,
+    },
+    {
+        label: "Explore",
+        icon: ExploreNavIcon,
+    },
+    {
+        label: "Notifications",
+        icon: NotificationNavIcon,
+    },
+    {
+        label: "Messages",
+        icon: MessageNavIcon,
+    },
+    {
+        label: "Bookmarks",
+        icon: BookmarkNavIcon,
+    },
+    {
+        label: "Profile",
+        icon: ProfileNavIcon,
+    },
+];
 function Sidebar() {
+    const windowSize = useWindowSize();
+    let mobile=windowSize.width < 1000;
     return (
         <div className={classes.Sidebar}>
-            <h1>Asylum</h1>
+            {!mobile && <h1>OnlyPics</h1>}
             <ul className={classes.navOptionsList} type="none">
-                <li className={classes.navOption}>
-                    <span className={classes.navIcon}>
-                        <HomeNavIcon />
-                    </span>
-                    <span className={classes.navLabel}>Home</span>
-                </li>
-                <li className={classes.navOption}>
-                    <span className={classes.navIcon}>
-                        <ExploreNavIcon />
-                    </span>
-                    <span className={classes.navLabel}>Explore</span>
-                </li>
-                <li className={classes.navOption}>
-                    <span className={classes.navIcon}>
-                        <NotificationNavIcon />
-                    </span>
-                    <span className={classes.navLabel}>Notifications</span>
-                </li>
-                <li className={classes.navOption}>
-                    <span className={classes.navIcon}>
-                        <MessageNavIcon />
-                    </span>
-                    <span className={classes.navLabel}>Messages</span>
-                </li>
-                <li className={classes.navOption}>
-                    <span className={classes.navIcon}>
-                        <BookmarkNavIcon />
-                    </span>
-                    <span className={classes.navLabel}>Bookmarks</span>
-                </li>
-                <li className={classes.navOption}>
-                    <span className={classes.navIcon}>
-                        <ProfileNavIcon />
-                    </span>
-                    <span className={classes.navLabel}>Profile</span>
-                </li>
+                {navOptions.map(({ icon, label }) => {
+                    return <NavOption icon={icon} label={label} />;
+                })}
             </ul>
-            <button className={classes.tweetBtn}>Tweet</button>
+            {!mobile && <button className={classes.tweetBtn}>Tweet</button>}
         </div>
     );
 }
